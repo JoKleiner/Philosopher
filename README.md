@@ -19,13 +19,14 @@ This project is a simulation of the Dining Philosophers Problem using threads in
     6 = how many times each philo must eat (optional)
 <br/><br/>
 
-**How it works:**
-    Each philosopher is a thread
-    They pick up two forks (mutexes) to eat
-    If they don’t eat in time, they die
-    Program uses pthread, mutex, and usleep
+**How it works:**<br />
+    Each philosopher is a thread<br />
+    They pick up two forks (mutexes) to eat<br />
+    If they don’t eat in time, they die<br />
+    Program uses pthread, mutex, and usleep<br />
+<br/><br/>
 
-**Rules:**
-    No deadlocks
-    No race conditions
-    Accurate timing
+**Rules:**<br />
+    No deadlocks<br />
+    No race conditions<br />
+    Accurate timing<br />
