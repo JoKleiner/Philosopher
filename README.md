@@ -12,7 +12,6 @@ This project is a simulation of the Dining Philosophers Problem using threads in
     ./philo 5 800 200 200 6
 
 **Example:**<br />
-./philo 5 800 200 200 6<br />
     5 = number of philosophers<br />
     800 = time to die (ms)<br />
     200 = time to eat (ms)<br />
