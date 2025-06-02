@@ -1,8 +1,7 @@
 # Philosophers (Philo) – 42 Project
 **About:**<br />
-This project simulates the Dining Philosophers Problem using threads and mutex in C.<br />
+This project simulates the Dining Philosophers Problem using threads and mutexes in C.<br />
 Philosophers sit around a table. Each needs two forks to eat. They take forks, eat, sleep, then think, and repeat. The challenge is to make sure they don’t all try to use the same forks at once (race conditions) or get stuck waiting forever (deadlocks).
-
 We use threads and mutexes to manage this safely.
 <br/><br/>
 
