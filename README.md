@@ -17,7 +17,6 @@ This project is a simulation of the Dining Philosophers Problem using threads in
     200 = time to eat (ms)<br />
     200 = time to sleep (ms)<br />
     6 = how many times each philo must eat (optional)
-<br/><br/>
 
 **How it works:**<br />
     Each philosopher is a thread<br />
