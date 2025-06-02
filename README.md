@@ -24,7 +24,6 @@ This project is a simulation of the Dining Philosophers Problem using threads in
     They pick up two forks (mutexes) to eat<br />
     If they don’t eat in time, they die<br />
     Program uses pthread, mutex, and usleep<br />
-<br/><br/>
 
 **Rules:**<br />
     No deadlocks<br />
