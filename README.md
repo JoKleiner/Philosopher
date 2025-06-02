@@ -9,14 +9,14 @@ This project is a simulation of the Dining Philosophers Problem using threads in
 
 **Run:**
 
-    ./philo <number_of_philosophers> <time_to_die time_to_eat> <time_to_sleep> [number_of_times_each_philosopher_must_eat]
+    ./philo 5 800 200 200 6
 
 **Example:**
-./philo 5 800 200 200 6
-    5 = number of philosophers
-    800 = time to die (ms)
-    200 = time to eat (ms)
-    200 = time to sleep (ms)
+./philo 5 800 200 200 6<br />
+    5 = number of philosophers<br />
+    800 = time to die (ms)<br />
+    200 = time to eat (ms)<br />
+    200 = time to sleep (ms)<br />
     6 = how many times each philo must eat (optional)
 <br/><br/>
 
