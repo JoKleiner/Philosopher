@@ -15,20 +15,23 @@ COUNT		= 0
 
 all: $(NAME)
 
+$(NAME): $(OBJS)
+	@printf "\033[1A\033[2KCreate $(NAME)... "
+	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) 
+	@printf "\033[0;32mcreated\033[0m\n"
+
+	
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(HEADER)
 	@mkdir -p $(OBJ_DIR)
 	@$(eval COUNT := $(shell echo $$(($(COUNT)+1))))
 	@if [ $(COUNT) -eq 1 ]; then \
 		printf "\n"; \
 	fi
-	@printf "\033[1A\033[2KCompilen $< \t ($(COUNT)/$(TOTAL))\n";
+	@printf "\033[1A\033[2KCompilen ($(COUNT)/$(TOTAL)) $<\n";
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 
-$(NAME): $(OBJS)
-	@printf "\033[1A\033[2KCreate $(NAME)... "
-	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS) 
-	@printf "\033[0;32mcreated\033[0m\n"
+
 
 clean:
 	@if [ -d "$(OBJ_DIR)" ]; then \
